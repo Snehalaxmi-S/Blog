@@ -51,6 +51,10 @@
     cursor: pointer;
 } 
 
+.sidebarListItem:hover{
+    text-decoration: underline;
+}
+
 
 .sidebarSocial{
     margin-top: 15px;
