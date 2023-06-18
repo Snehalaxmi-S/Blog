@@ -1,4 +1,4 @@
-import Spost from '../spost/Spost';
+import Spost from '../../components/spost/Spost';
 import './posts.css';
 
 
