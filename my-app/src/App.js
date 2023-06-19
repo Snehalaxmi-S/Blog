@@ -11,6 +11,7 @@ import {
   Route,
   Link
 } from "react-router-dom";
+import ContactUs from "./pages/contactus/ContactUs";
 
 function App() {
   const user = true;
@@ -38,6 +39,9 @@ function App() {
         </Route>
         <Route path="/post/:postId">
           <Single />
+        </Route>
+        <Route path="/contact">
+          <ContactUs />
         </Route>
        
       </Switch>
