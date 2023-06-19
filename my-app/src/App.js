@@ -22,13 +22,16 @@ function App() {
           <Home />
         </Route>
         <Route path="/register">
-          {user ? <Home/> : <Register />}
+          <Register/>
+          {/* {user ? <Home/> : <Register />} */}
         </Route>
         <Route path="/login">
-        {user ? <Home/> : <Login />}
+          <Login />
+        {/* {user ? <Home/> : <Login />} */}
         </Route>
         <Route path="/write">
-        {user ? <Write/> : <Register />}
+        {/* {user ? <Write/> : <Register />} */}
+        <Write/>
         </Route>
         <Route path="/settings">
         {user ? <Settings/> : <Register />}
@@ -36,8 +39,9 @@ function App() {
         <Route path="/post/:postId">
           <Single />
         </Route>
+       
       </Switch>
-      <Register />
+      
       
     </Router>
   );

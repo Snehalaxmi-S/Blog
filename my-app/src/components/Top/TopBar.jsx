@@ -1,5 +1,5 @@
 import './topstyle.css';
-import user from './user.png';
+import profile from './profile.png';
 import { Link } from "react-router-dom";
 
 export default function TopBar() {
@@ -15,16 +15,39 @@ export default function TopBar() {
       <div className="topCenter">
         <ul className="topList">
           <li className="topListItem">
-            <Link to="/">HOME</Link>
+            <Link className="link" to="/" >HOME</Link>
           </li>
-          <li className="topListItem">ABOUT</li>
-          <li className="topListItem">CONTACT</li>
-          <li className="topListItem">WRITE</li>
-          <li className="topListItem">LOGOUT</li>
+          <li className="topListItem"><Link className="link" to="/contact" >CONTACT</Link></li>
+          <li className="topListItem"><Link className="link" to="/write" >WRITE</Link></li>
+          <li className="topListItem"><Link className="link" to="/settings" >SETTINGS</Link></li>
+          {/* <li className="topListItem">
+            {user && "LOGOUT"}
+          </li> */}
         </ul>
       </div>
       <div className="topRight">
-        <img className='topImg' src={user} alt="" />
+        {
+          user ? (
+            <img className='topImg' src={profile} alt="" />
+
+          ) : (
+            <ul className='topList'>
+              <li className='topListItem'>
+                <Link className="link" to="/login" >
+                  LOGIN
+                </Link>
+              </li>
+              <li className='topListItem'>
+                <Link className="link" to="/register" >
+                  REGISTER
+                </Link>
+              </li>
+              
+            </ul>
+
+          )
+
+        }
         <i className="topSearch fas fa-search"></i>
       </div>
     </div>
