@@ -3,7 +3,7 @@ import profile from './profile.png';
 import { Link } from "react-router-dom";
 
 export default function TopBar() {
-  const user = true;
+  const user = false;
   return (
     <div className='topi'>
       <div className="topLeft">

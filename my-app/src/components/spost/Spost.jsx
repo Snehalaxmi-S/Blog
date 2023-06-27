@@ -5,6 +5,7 @@ import img6 from "./img6.jpg";
 import img8 from "./img8.jpg";
 import img12 from "./img12.jpg";
 import img14 from "./img14.jpg";
+import { Link } from "react-router-dom";
 
 
 
@@ -19,9 +20,11 @@ export default function Spost() {
                 <span className="postCat">Music</span>
                 <span className="postCat">Life</span>
             </div>
+            <Link className="link" to="/post/1" >
             <span className="postTitle">
                 Lorem ipsum dolor sit amet 
             </span>
+            </Link>
             <hr/>
             <span className="postDate">1 hour ago</span>
         </div>
@@ -36,9 +39,11 @@ export default function Spost() {
                 <span className="postCat">Music</span>
                 <span className="postCat">Life</span>
             </div>
+            <Link className="link" to="/post/2" >
             <span className="postTitle">
                 Lorem ipsum dolor sit amet 
             </span>
+            </Link>
             <hr/>
             <span className="postDate">1 hour ago</span>
         </div>
@@ -53,9 +58,11 @@ export default function Spost() {
                 <span className="postCat">Music</span>
                 <span className="postCat">Life</span>
             </div>
+            <Link className="link" to="/post/3" >
             <span className="postTitle">
                 Lorem ipsum dolor sit amet 
             </span>
+            </Link>
             <hr/>
             <span className="postDate">1 hour ago</span>
         </div>
@@ -70,9 +77,11 @@ export default function Spost() {
                 <span className="postCat">Music</span>
                 <span className="postCat">Life</span>
             </div>
+            <Link className="link" to="/post/4" >
             <span className="postTitle">
                 Lorem ipsum dolor sit amet 
             </span>
+            </Link>
             <hr/>
             <span className="postDate">1 hour ago</span>
         </div>
@@ -87,9 +96,11 @@ export default function Spost() {
                 <span className="postCat">Music</span>
                 <span className="postCat">Life</span>
             </div>
+            <Link className="link" to="/post/5" >
             <span className="postTitle">
                 Lorem ipsum dolor sit amet 
             </span>
+            </Link>
             <hr/>
             <span className="postDate">1 hour ago</span>
         </div>
@@ -104,9 +115,11 @@ export default function Spost() {
                 <span className="postCat">Music</span>
                 <span className="postCat">Life</span>
             </div>
+            <Link className="link" to="/post/6" >
             <span className="postTitle">
                 Lorem ipsum dolor sit amet 
             </span>
+            </Link>
             <hr/>
             <span className="postDate">1 hour ago</span>
         </div>

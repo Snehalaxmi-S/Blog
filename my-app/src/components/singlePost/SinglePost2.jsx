@@ -1,11 +1,11 @@
 import "./singlepost.css";
-import img14 from "./img14.jpg";
+import img2 from "./img2.jpg";
 
 export default function SinglePost() {
   return (
     <div className="singlePost">
         <div className="singlePostWrapper">
-            <img className="singlePostImg" src={img14} alt="" />
+            <img className="singlePostImg" src={img2} alt="" />
             <h1 className="singlePostTitle">
                 Lorem ipsum dolor sit amet.
                 <div className="singlePostEdit">
